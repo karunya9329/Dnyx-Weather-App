@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dnyx Weather App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-100 flex items-center justify-center min-h-screen">
+
+  <div class="bg-white p-6 rounded-xl shadow-lg w-full max-w-md">
+    <h1 class="text-2xl font-bold mb-4 text-center">Weather App</h1>
+
+    <!-- City Input -->
+    <div class="flex mb-4">
+      <input type="text" id="cityInput" placeholder="Enter city" class="flex-1 p-2 border border-gray-300 rounded-l-md focus:outline-none">
+      <button id="searchBtn" class="bg-blue-500 text-white px-4 rounded-r-md hover:bg-blue-600">Search</button>
+    </div>
+
+    <!-- Weather Info -->
+    <div id="weatherInfo" class="hidden text-center">
+      <h2 id="cityName" class="text-xl font-semibold mb-2"></h2>
+      <p id="description" class="capitalize mb-2"></p>
+      <p class="text-3xl font-bold" id="temperature"></p>
+      <img id="icon" class="mx-auto mt-2" src="" alt="weather icon">
+      <button id="toggleUnit" class="mt-3 bg-gray-200 px-3 py-1 rounded hover:bg-gray-300">Toggle °C/°F</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
